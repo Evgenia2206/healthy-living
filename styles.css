@@ -1,0 +1,91 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 10px 0;
+    overflow: hidden;
+}
+
+.video {
+    position: absolute;
+    z-index: 0;
+    inline-size: 100%;
+}
+
+.text {
+    z-index: 1;
+    font-size: 6.5vw;
+    font-weight: bold;
+    background-color: black;
+}
+
+.bg {
+    z-index: 1;
+    border: 2rem solid black;
+    border-bottom-width: 1.4rem;
+    min-inline-size: 200px;
+    flex-grow: 1;
+}
+
+@media (max-width: 872px) {
+    .bg {
+        min-inline-size: 100px;
+     }
+ }
+
+@media (max-width: 465px) {
+    .bg {
+        min-inline-size: 50px;
+    }
+}
+
+@media (max-width: 1400px) {
+   .bg {
+       border-width: 1.8rem;
+       border-bottom-width: 1.3rem;
+    }
+}
+
+@media (max-width: 1250px) {
+   .bg {
+       border-width: 1.5rem;
+       border-bottom-width: 1rem;
+   }
+}
+
+@media (max-width: 1100px) {
+   .bg {
+       border-width: 1.1rem;
+       border-bottom-width: 0.9rem;
+   }
+}
+
+@media (max-width: 900px) {
+   .bg {
+       border-width: 1rem; 
+       border-bottom-width: 0.7rem;
+   }
+}
+
+@media (max-width: 700px) {
+   .bg {
+       border-width: 0.7rem; 
+       border-bottom-width: 0.5rem;
+   }
+}
+
+@media (max-width: 480px) {
+    .bg {
+        border-width: 0.45rem; 
+        border-bottom-width: 0.4rem;
+    }
+ }
